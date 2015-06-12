@@ -1,1 +1,1 @@
-# antix-libs
+Necessary library scripts.
