@@ -1,3 +1,10 @@
+antix-libs (0.5.2) unstable; urgency=low
+
+  * Removed all old references to make-xinit
+
+ -- anticapitalista <antiX@operamail.com> Sat, 20 Jun 2015 00:59:00 +0200
+
+
 antix-libs (0.5.1) unstable; urgency=low
 
   * Add more files to general-remaster-excludes

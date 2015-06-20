@@ -7,7 +7,6 @@ autologin                      /sbin
 make-xorg-conf                 /sbin
 antixers                       /etc/sudoers.d
 sbin/*                         /usr/sbin
-antiX/*                        /usr/share/antiX
 excludes/*                     /usr/local/share/excludes 
 boot-menus/*                   /usr/local/share/boot-menus             
 pc-speaker.conf                /etc/modprobe.d 
