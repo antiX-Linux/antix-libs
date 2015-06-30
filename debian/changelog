@@ -1,3 +1,10 @@
+antix-libs (0.5.3) unstable; urgency=low
+
+  * Updated Italian
+
+ -- anticapitalista <antiX@operamail.com> Mon, 29 Jun 2015 13:58:00 +0200
+
+
 antix-libs (0.5.2) unstable; urgency=low
 
   * Removed all old references to make-xinit
