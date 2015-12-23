@@ -16,7 +16,8 @@ pfgt_gui() {
 
 BG_INFO_SLEEP=1
 
-YAD=$(which yad 2>/dev/null)
+YAD=/usr/bin/yad
+test -e $YAD || YAD=
 
 #tty >> $HOME/tty.out
 
@@ -212,7 +213,7 @@ bg_info_box() {
         [ "$title" ] && text="$(center_strings "[title]$title[/]")\n$text"
 
         # Need to call yad directly to get proper PID.  :-(
-        ($YAD --title="$TITLE" $opts --text="$text") &
+        ($YAD --title="$TITLE" $opts --text="$text" 2>/dev/null) &
         GUI_PID=$!
         disown
     else
@@ -302,7 +303,7 @@ _dialog_box_gui() {
             [ "$SET_DEBUG" ] && echo -e "$text" >&2
 
             local result="$($YAD --title="$TITLE" $opts --text="$text" --form \
-                --field="$label:$field_type" "$choice")"
+                --field="$label:$field_type" "$choice" 2>/dev/null)"
             retval=$?
 
             if ! [ "$result" ]; then
@@ -315,7 +316,7 @@ _dialog_box_gui() {
     else
         while true; do
             [ "$SET_DEBUG" ] && echo -e "$text" >&2
-            $YAD --title="$TITLE" $opts --text="$text"
+            $YAD --title="$TITLE" $opts --text="$text" 2>/dev/null
             retval=$?
 
             [ "$retval" -gt "100" ] && confirm_quit && continue
