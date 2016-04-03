@@ -25,3 +25,6 @@
 # /var/lib/udisks/*
 # /var/lib/urandom/*
 # /var/log/samba/*
+/home/*/.cache/mozilla/*
+/home/*/.macromedia/*
+/home/*/.adobe/*

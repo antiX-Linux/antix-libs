@@ -81,7 +81,7 @@ main() {
 
     # Read command line params that start with "-" and remove them from "$@"
     local param
-    while [ $# -gt 0 -a -n "$1" -a -z "${1##-*}" ]; do
+    while [ $# -gt 0 -a "${#1}" -gt 0 -a -z "${1##-*}" ]; do
         param=${1#-}
         shift
         case $param in
@@ -253,9 +253,10 @@ Section "Device"
 EndSection
 
 Section "Screen"
-    Identifier "Screen0"
-    Monitor "Monitor0"
-    Device  "Device0"
+    Identifier      "Screen0"
+    Monitor         "Monitor0"
+    Device          "Device0"
+    DefaultDepth    16
 $(modes_section $mode)
 EndSection
 Xorg_Conf

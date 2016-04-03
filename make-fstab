@@ -39,7 +39,7 @@
          MP_DIR=/media
       LOCK_FILE=/run/lock/fstab.lock
      FSTAB_FILE=/etc/fstab
-       LOG_FILE=/var/log/make-fstab.log
+       LOG_FILE=/var/log/live/make-fstab.log
 
        USE_UUID=true
 
@@ -191,6 +191,8 @@ main() {
 
       HOTPLUG_FILE=$FSTAB_FILE.hotplug
     AUTOMOUNT_FILE=$FSTAB_FILE.automount
+
+    [ "$LOG_FILE" ] && mkdir -p $(dirname $LOG_FILE)
 
     if [ "$UPDATE_MODE" ]; then
 
@@ -479,7 +481,12 @@ BLKID
         [ "$CMD_MOUNT" = usb ] && ! is_usb_or_removable $dev && continue
 
         qsay "Automount $dev at $mntpnt"
-        [ "$AM_ROOT" ] && mount $mntpnt
+        [ "$AM_ROOT" ] || continue
+
+        case $type in
+            btrfs) modprobe -q $type 2>/dev/null;;
+        esac
+        mount $mntpnt
 
     done << BLKID
 $($SUDO blkid -o device -c /dev/null \
@@ -506,8 +513,8 @@ write_hd_entry() {
             return 0
             ;;
 
-        ext[234]|adfs|affs|btrfs|cifs|coda|cramfs|efs|hfs|hfsplus) ;;
-        hpfs|jfs|minix|ncpfs|nfs|qnx4|romfs|sysv|ubifs|ufs|xfs)    ;;
+        ext[234]|adfs|affs|btrfs|cifs|coda|cramfs|efs|exfat|hfs)           ;;
+        hfsplus|hpfs|jfs|minix|ncpfs|nfs|qnx4|romfs|sysv|ubifs|ufs|xfs)    ;;
 
         reiserfs)
             options=$options,notail
@@ -653,6 +660,7 @@ cdrom_devices() {
         esac
     done
 
+    # FIXME: use major dev number?  with readlink -f?
     for dev in $(find /dev -type b | egrep -v "/loop|/ram|/sd"); do
         major=$(stat -c %t $dev 2>/dev/null)
         case $major in
