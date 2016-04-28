@@ -1,3 +1,9 @@
+antix-libs (0.5.8) unstable; urgency=medium
+
+  * More make-fstab fixes
+
+ -- anticapitalista <antix@operamail.com>  Mon, 04 Apr 2016 14:20:33 +0300
+
 antix-libs (0.5.7+nmu2) unstable; urgency=medium
 
   * Make-fstab changes to add extfat 
