@@ -1,3 +1,39 @@
+antix-libs (0.5.14) unstable; urgency=medium
+
+  * Add major dev number of 103 for partitions > 15 to make-fstab
+
+ -- anticapitalista <antix@operamail.com>  Sat, 04 Jun 2016 23:55:10 +0300
+
+antix-libs (0.5.13) unstable; urgency=medium
+
+  * Updated translations
+
+ -- anticapitalista <antix@operamail.com>  Mon, 30 May 2016 14:53:08 +0300
+
+antix-libs (0.5.12) unstable; urgency=medium
+
+  * new make-fstab file
+
+ -- anticapitalista <antix@operamail.com>  Thu, 26 May 2016 18:19:50 +0300
+
+antix-libs (0.5.11) unstable; urgency=medium
+
+  * Add mmcblk devices to fstab (as well as sd and sr) 
+
+ -- anticapitalista <antix@operamail.com>  Sun, 22 May 2016 18:04:37 +0300
+
+antix-libs (0.5.10) unstable; urgency=medium
+
+  *  support for "uxa" and "sna" cheats
+
+ -- anticapitalista <antix@operamail.com>  Tue, 03 May 2016 13:54:50 +0300
+
+antix-libs (0.5.9) unstable; urgency=medium
+
+  * Added antixsources.sh to antixers sudoers file 
+
+ -- anticapitalista <antix@operamail.com>  Fri, 29 Apr 2016 13:09:30 +0300
+
 antix-libs (0.5.8) unstable; urgency=medium
 
   * More make-fstab fixes

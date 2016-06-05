@@ -20,6 +20,8 @@
 
 %users ALL=(root) NOPASSWD: /usr/sbin/minstall 
 
+%users ALL=(root) NOPASSWD: /usr/local/bin/antixsources.sh
+
 %users ALL=(root) NOPASSWD: /usr/local/bin/connectshares.sh
 
 %users ALL=(root) NOPASSWD: /usr/local/bin/disconnectshares.sh 
