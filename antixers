@@ -10,9 +10,7 @@
 
 %users ALL=(root) NOPASSWD: /sbin/fdisk.distrib 
 
-%users ALL=(root) NOPASSWD: /usr/bin/ceni 
-
-%users ALL=(root) NOPASSWD: /usr/bin/rox 
+%users ALL=(root) NOPASSWD: /usr/bin/ceni  
 
 %users ALL=(root) NOPASSWD: /usr/local/bin/persist-config
 
