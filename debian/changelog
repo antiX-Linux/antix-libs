@@ -1,3 +1,15 @@
+antix-libs (0.5.23) unstable; urgency=medium
+
+  * Removed geometry call for x-terminal-emulator in antiX-common.sh 
+
+ -- anticapitalista <antix@operamail.com>  Thu, 27 Apr 2017 00:31:52 +0300
+
+antix-libs (0.5.22) unstable; urgency=low
+
+  * Updated Czech, French and Portuguese translations
+
+ -- anticapitalista <antix@operamail.com>  Sat, 01 Apr 2017 19:57:43 +0300
+
 antix-libs (0.5.21) unstable; urgency=medium
 
   * Removed antiX-excludes.sh script

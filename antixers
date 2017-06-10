@@ -28,6 +28,10 @@
 
 %users ALL=(root) NOPASSWD: /usr/local/bin/menu_manager.sh 
 
+%users ALL=(root) NOPASSWD: /usr/sbin/pm-hibernate
+
+%users ALL=(root) NOPASSWD: /usr/sbin/pm-suspend
+
 Defaults env_keep += "RESTARTED HOME"
 Defaults  !requiretty
 Defaults  !tty_tickets

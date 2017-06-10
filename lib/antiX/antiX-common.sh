@@ -26,7 +26,7 @@ SCREEN_WIDTH=$(stty size 2>/dev/null | cut -d" " -f2)
 CMDLINE_ARGS=("$@")
 
        GUI_TERM="x-terminal-emulator"
-      TERM_OPTS="--geometry=+50+50 -e"
+      TERM_OPTS=" -e"
  TERM_TITLE_OPT="--title"
      GUI_FILERS="rox thunar spacefm"
 
