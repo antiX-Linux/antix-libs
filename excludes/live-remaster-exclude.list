@@ -2,7 +2,6 @@
 # live-remaster-exclude.list
 #
 # Files to be excluded when a live-remaster is created.
-# The original list is available in live-remaster-exclude.orig.
 #--------------------------------------------------------------------
 dev/*
 dev/.[^.]*
