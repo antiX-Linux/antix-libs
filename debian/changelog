@@ -1,3 +1,26 @@
+antix-libs (0.5.28) unstable; urgency=medium
+
+  * Further edits to make-fstab
+
+ -- anticapitalista <antix@operamail.com>  Fri, 29 Sep 2017 14:07:38 +0300
+
+antix-libs (0.5.27) unstable; urgency=medium
+
+  * don't create /media or /mnt/live entries when --install
+  * move dynamic mountpoints to /mnt/live/
+
+ -- anticapitalista <antix@operamail.com>  Wed, 27 Sep 2017 16:47:59 +0300
+
+antix-libs (0.5.26) unstable; urgency=medium
+
+  * Many changes to make-xorg
+  * Add options for setting depth and enabling composite
+  * The "safe" and "default" modes specify the vesa driver and nothing else
+  * The command line args are now put in the xorg.conf file
+  * warning message to screen, add a warning in the xorg.conf file and set the driver to vesa
+
+ -- anticapitalista <antix@operamail.com>  Sat, 26 Aug 2017 10:40:11 +0100
+
 antix-libs (0.5.25) unstable; urgency=medium
 
   * Removed /etc/network/interfaces and /etc/network/interfaces.d/* out of excludes files 
