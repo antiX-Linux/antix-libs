@@ -1,3 +1,10 @@
+antix-libs (0.6.0) unstable; urgency=medium
+
+  * this should be final version on antiX-17
+  * make-fstab - added chnages to fix ntfs breakage for frugal install
+
+ -- anticapitalista <antix@operamail.com>  Thu, 05 Oct 2017 13:00:20 +0300
+
 antix-libs (0.5.28) unstable; urgency=medium
 
   * Further edits to make-fstab
