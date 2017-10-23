@@ -1,3 +1,11 @@
+antix-libs (0.6.1) unstable; urgency=medium
+
+  * make-fstab version bump
+  * changes in make-fstab
+  * added etc/live/persist-config.conf to general-remaster-exclude.list
+
+ -- anticapitalista <antix@operamail.com>  Fri, 13 Oct 2017 12:35:12 +0300
+
 antix-libs (0.6.0) unstable; urgency=medium
 
   * this should be final version on antiX-17

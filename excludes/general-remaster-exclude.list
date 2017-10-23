@@ -8,6 +8,7 @@
 
 etc/NetworkManager/system-connections/*
 etc/X11/xorg.conf
+etc/live/persist-config.conf
 etc/udev/*-persistent-net.rules
 etc/wicd/*.conf
 etc/wicd/dhclient.conf.template
