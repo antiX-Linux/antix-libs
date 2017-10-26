@@ -14,9 +14,9 @@ LOADED_STYLE="true"
     ANTIX_IMAGE="/usr/local/lib/antiX/antiX-logo.png"
 
 if [ "$Static_antiX_Libs" ]; then
-    YAD_STD_OPTS="--center --on-top --width=680"
+    YAD_STD_OPTS="--center --on-top --width=700 --fixed"
 else
-    YAD_STD_OPTS="--center --on-top --width=680 --image=$ANTIX_IMAGE"
+    YAD_STD_OPTS="--center --on-top --width=700 --fixed --image=$ANTIX_IMAGE"
 fi
 
 
@@ -24,7 +24,7 @@ fi
 #--image=gtk-dialog-info
 
 YAD_DEVICE_OPTS="
-    --width=680 --height=400
+    --width=700 --height=400
     --button=gtk-ok:0
     --button=gtk-cancel:1"
 
