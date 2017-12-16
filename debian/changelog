@@ -1,3 +1,15 @@
+antix-libs (0.6.4) unstable; urgency=medium
+
+  * Updated Italian
+
+ -- anticapitalista <antix@operamail.com>  Tue, 28 Nov 2017 20:59:55 +0200
+
+antix-libs (0.6.3) unstable; urgency=medium
+
+  * Included blacklist pcspkr in pc-speaker.conf
+
+ -- anticapitalista <antix@operamail.com>  Wed, 15 Nov 2017 21:02:15 +0200
+
 antix-libs (0.6.2) unstable; urgency=medium
 
   * Fix too tall yad by adding --fixed to antiX-style-default.sh
