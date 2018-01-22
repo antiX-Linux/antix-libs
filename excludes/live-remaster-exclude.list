@@ -37,6 +37,7 @@ swapfile
 var/cache/apt-show-versions/*
 var/cache/apt/*.bin
 var/cache/apt/archives/*.deb
+var/cache/brightness-settings-cache/*
 var/cache/debconf/*-old
 var/cache/lightdm
 var/cache/man/*

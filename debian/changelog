@@ -1,3 +1,9 @@
+antix-libs (0.6.5) unstable; urgency=medium
+
+  * var/cache/brightness-settings-cache/* added to live-remaster-exclude.list
+
+ -- anticapitalista <antix@operamail.com>  Fri, 12 Jan 2018 13:56:32 +0200
+
 antix-libs (0.6.4) unstable; urgency=medium
 
   * Updated Italian
